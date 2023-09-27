@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primaryColor: #B0578D;
+    --secondaryColor: #FACBEA;
+    --tertiaryColor:#f8e0f0;
+    --quarternaryColor:#fff6f1;
+    --quintaidkwhatcomesnextColor:#fff6f1;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--quarternaryColor);
+    background-image:url("./arches.png");
+}
+
+nav{
+    position: fixed;
+    top:0;
+    width:100%;
+    height:90px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryColor);
+    background-image: url("./blizzard.png");
+}
+
+.nav-wrapper > a{
+    font-size: 40px;
+    font-weight:800;
+    color:var(--secondaryColor);
+    cursor: pointer;
+}
+
+.nav-wrapper{
+    width:80%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    width:400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: 24px;
+    font-weight: 700;
+    color:var(--secondaryColor);
+    cursor: pointer;
+}
+
+.main_wrapper{
+    width: 600px;
+    margin:100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_wrapper h1{
+    width: 560px;
+}
+
+.postForm{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 560px;
+}
+
+.postForm input, .postForm textarea{
+    width:100%;
+    font-size: 20px;
+    padding:5px 10px;
+    margin:1% 0;
+}
+
+.postForm input{
+    width: 540px;
+}
+
+.postForm textarea{
+    resize: none;
+    margin:3% 0;
+}
+
+.hero_edit{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span{
+    position: absolute;
+    right:5px;
+}
+
+.primary_btn {
+  background: var(--primaryColor);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.72);
+  box-sizing: border-box;
+  color:white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  align-self: flex-end;
+  margin-bottom: 5%;
+}
+
+.primary_btn:hover,
+.primary_btn:active {
+  background-color: #824268;
+  color: #FFFFFF;
+}
+
+.post{
+    margin:2% auto;
+    padding:40px;
+    width:500px;
+    border: 1px solid var(--primaryColor);
+    background-color: var(--quintaidkwhatcomesnextColor);
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login_container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 10% auto;
+    width:450px;
+    height:60vh;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.175);
+}
+
+
+.login_container h1 {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height:60%;
+}
+
+.loginInput {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    width: 250px;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+
+.loginButton {
+    background-color: var(--secondaryColor);
+    padding: 10px 15px;
+    color: #3d2544;
+    border-radius: 3px;
+    border-width: 1px;
+    width: 150px;
+    margin-top:10%;
+    font-size: 20px;
+}
+
+.loginButton:hover{
+    background-color: #facbea60;
+    color:rgb(219, 165, 231);
+}
+
+.label_div{
+    width: 95%;
+    padding: 0 5%;
+    margin-bottom:-1%;
+}
+
+.label_div label{
+    font-size: 22px;
+}
+
